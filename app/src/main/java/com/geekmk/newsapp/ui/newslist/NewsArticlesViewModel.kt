@@ -3,6 +3,7 @@ package com.geekmk.newsapp.ui.newslist
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
+import com.geekmk.newsapp.base.NetworkErrorCode
 import com.geekmk.newsapp.data.NewsArticleRepository
 import com.geekmk.newsapp.data.model.NewsArticle
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -16,15 +17,21 @@ class NewsArticlesViewModel @Inject constructor(
     private val newsArticleRepository: NewsArticleRepository) : ViewModel() {
 
     var newsArticlesResult: MutableLiveData<List<NewsArticle>> = MutableLiveData()
-    var newsArticlesError: MutableLiveData<String> = MutableLiveData()
+    var newsArticlesError: MutableLiveData<Int> = MutableLiveData()
     lateinit var disposableObserver: DisposableObserver<List<NewsArticle>>
+    var newsArticlesLoader: MutableLiveData<Boolean> = MutableLiveData()
+
 
     fun newsArticlesResult(): LiveData<List<NewsArticle>> {
         return newsArticlesResult
     }
 
-    fun newsArticlesError(): LiveData<String> {
+    fun newsArticlesError(): LiveData<Int> {
         return newsArticlesError
+    }
+
+    fun newsArticlesLoader(): LiveData<Boolean> {
+        return newsArticlesLoader
     }
 
     fun loadTopNewsArticles() {
@@ -36,10 +43,12 @@ class NewsArticlesViewModel @Inject constructor(
 
             override fun onNext(newsArticles: List<NewsArticle>) {
                 newsArticlesResult.postValue(newsArticles)
+                newsArticlesLoader.postValue(false)
             }
 
             override fun onError(e: Throwable) {
-                newsArticlesError.postValue(e.message)
+                newsArticlesLoader.postValue(false)
+                newsArticlesError.postValue(NetworkErrorCode.ERROR_NO_INTERNET)
             }
         }
 

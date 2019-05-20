@@ -9,14 +9,22 @@ import com.geekmk.newsapp.utils.Utils
 import io.reactivex.Observable
 import javax.inject.Inject
 
-class NewsArticleRepository @Inject constructor(val apiInterface: ApiInterface,
-    val newsArticleDao: NewsArticleDao,val utils: Utils
+class NewsArticleRepository @Inject constructor(
+    val apiInterface: ApiInterface,
+    private val newsArticleDao: NewsArticleDao, private val utils: Utils
 ) {
 
     fun getTopArticles(): Observable<List<NewsArticle>> {
-        val observableFromApi = getArticlesFromApi()
+
+        val hasConnection = utils.isConnectedToInternet()
+        var observableFromApi: Observable<List<NewsArticle>>? = null
+        if (hasConnection) {
+            observableFromApi = getArticlesFromApi()
+        }
         val observableFromDb = getArticlesFromDb()
-        return Observable.concatArrayEager(observableFromApi, observableFromDb)
+
+        return if (hasConnection) Observable.concatArrayEager(observableFromApi, observableFromDb)
+        else observableFromDb
     }
 
     private fun getArticlesFromApi(): Observable<List<NewsArticle>> {
@@ -34,7 +42,7 @@ class NewsArticleRepository @Inject constructor(val apiInterface: ApiInterface,
             .toObservable()
             .doOnNext {
                 //Print log it.size :)
-                Log.e("REPOSITORY DB *** ", it.size.toString())
+                Log.d("REPOSITORY DB *** ", it.size.toString())
             }
     }
 }

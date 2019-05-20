@@ -1,18 +1,16 @@
 package com.geekmk.newsapp.ui.newslist
 
 import android.support.v7.widget.RecyclerView
-import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.geekmk.newsapp.R
+import com.geekmk.newsapp.base.inflate
 import com.geekmk.newsapp.data.model.NewsArticle
 
 class NewsListAdapter(var newsArticleRVS:MutableList<NewsArticle>): RecyclerView.Adapter<NewsItemViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsItemViewHolder {
-        val view  = LayoutInflater.from(parent.context).inflate(R.layout.item_news_article,
-                parent, false)
-        return NewsItemViewHolder(view)
+        return NewsItemViewHolder(parent.inflate(R.layout.item_news_article))
     }
 
     override fun getItemCount(): Int  = newsArticleRVS.size

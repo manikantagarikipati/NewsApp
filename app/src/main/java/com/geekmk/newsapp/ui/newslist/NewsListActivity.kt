@@ -6,15 +6,19 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.View
 import android.widget.Toast
 import com.geekmk.newsapp.R
+import com.geekmk.newsapp.base.BaseActivity
+import com.geekmk.newsapp.base.DynamicViewHandler
+import com.geekmk.newsapp.base.NetworkErrorCode
 import com.geekmk.newsapp.data.model.NewsArticle
 import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.activity_news_list.*
 import kotlinx.android.synthetic.main.content_news_list.*
 import javax.inject.Inject
 
-class NewsListActivity : AppCompatActivity() {
+class NewsListActivity : BaseActivity() {
 
 
     @Inject
@@ -34,6 +38,7 @@ class NewsListActivity : AppCompatActivity() {
             NewsArticlesViewModel::class.java
         )
 
+        showProgressView()
         newsArticlesViewModel.loadTopNewsArticles()
 
         newsArticlesViewModel.newsArticlesResult().observe(this,
@@ -45,11 +50,14 @@ class NewsListActivity : AppCompatActivity() {
             }
         )
 
-        newsArticlesViewModel.newsArticlesError().observe(this, Observer<String> {
+        newsArticlesViewModel.newsArticlesError().observe(this, Observer<Int> {
             it?.let {
-                Toast.makeText(this, "errot:$it",
-                        Toast.LENGTH_SHORT).show()
+                showView(DynamicViewHandler.INTERNET)
             }
+        })
+
+        newsArticlesViewModel.newsArticlesLoader().observe(this, Observer<Boolean> {
+            if (it == false) hideProgressView()
         })
 
     }

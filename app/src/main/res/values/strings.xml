@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">NewsApp</string>
     <string name="action_settings">Settings</string>
+    <string name="error_try_again">TryAgain</string>
+    <string name="error_offline">Uh ho!! You are offline</string>
+    <string name="error_offline_label">Please Check Your network connection and try again</string>
+    <string name="error_header">Whoa! something is not right</string>
+    <string name="error_label">Looks like the link is broken, or the \npage has been removed.
+    </string>
+  <string name="top_news_articles">Top News Articles</string>
 </resources>

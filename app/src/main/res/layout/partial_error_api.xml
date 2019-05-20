@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/errorApi"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:clickable="true"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:visibility="gone">
+
+  <android.support.v7.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_error_outline_black_24dp"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:fontFamily="@font/rajdhani_semibold"
+    android:gravity="center"
+    android:text="@string/error_header"
+    android:textColor="@color/black"
+    android:textSize="20sp"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:fontFamily="@font/rajdhani"
+    android:gravity="center"
+    android:text="@string/error_label"
+    android:textColor="#646464"
+    android:textSize="16sp"/>
+
+</LinearLayout>
