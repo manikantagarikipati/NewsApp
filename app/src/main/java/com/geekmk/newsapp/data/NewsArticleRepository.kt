@@ -10,7 +10,7 @@ import io.reactivex.Observable
 import javax.inject.Inject
 
 class NewsArticleRepository @Inject constructor(
-    val apiInterface: ApiInterface,
+    private val apiInterface: ApiInterface,
     private val newsArticleDao: NewsArticleDao, private val utils: Utils
 ) {
 
@@ -31,6 +31,7 @@ class NewsArticleRepository @Inject constructor(
         return apiInterface.getTopArticles("us")
             .doOnNext {
                 Log.e("REPOSITORY API * ", it.articles.size.toString())
+                newsArticleDao.deleteAllArticles()
                 newsArticleDao.insertAllNewsArticles(it.articles)
             }.flatMap {
                 Observable.just(it.articles)

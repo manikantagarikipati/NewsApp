@@ -11,7 +11,7 @@ import jp.wasabeef.picasso.transformations.RoundedCornersTransformation
 fun ViewGroup.inflate(@LayoutRes layoutRes: Int): View =
     LayoutInflater.from(this.context).inflate(layoutRes, this, false)
 
-fun AppCompatImageView.loadURL(url: String, isCrop :Boolean=false) {
+fun AppCompatImageView.loadURL(url: String?, isCrop :Boolean=false) {
     if(isCrop){
         Picasso.get().load(url).fit().transform(RoundedCornersTransformation(30,0)).into(this)
     }else{

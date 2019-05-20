@@ -44,9 +44,7 @@ class NewsDetailActivity : BaseActivity(), WebViewContract {
 
     override fun onSupportNavigateUp(): Boolean {
         super.onSupportNavigateUp()
-
         finish()
-
         return true
 
     }

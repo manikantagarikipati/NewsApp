@@ -15,6 +15,10 @@ abstract class BaseActivity : AppCompatActivity(), DynamicViewHandler.ErrorViewU
         dynamicView.user = this
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        dynamicView.user = this
+    }
     //displays the generic progress
     fun showProgressView() {
         dynamicView.show(DynamicViewHandler.PROGRESS)

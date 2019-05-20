@@ -17,8 +17,8 @@ class NewsItemViewHolder(item: View,val viewClickCallBack: ViewClickCallBack?): 
         setTextIfAvailable(itemView.tvTime,newsArticle.publishedAt)
         itemView.ivNewsArticleImage.loadURL(newsArticle.urlToImage,true)
         itemView.setOnClickListener {
-            if(newsArticle.url.isNotEmpty()){
-                viewClickCallBack?.onViewClicked(R.id.nav_news_detail,newsArticle.url)
+            if(!newsArticle.url.isNullOrEmpty()){
+                viewClickCallBack?.onViewClicked(R.id.nav_news_detail,newsArticle.url!!)
             }
         }
     }

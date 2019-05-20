@@ -1,9 +1,6 @@
 package com.geekmk.newsapp.data.source.local
 
-import android.arch.persistence.room.Dao
-import android.arch.persistence.room.Insert
-import android.arch.persistence.room.OnConflictStrategy
-import android.arch.persistence.room.Query
+import android.arch.persistence.room.*
 import com.geekmk.newsapp.data.model.NewsArticle
 import io.reactivex.Single
 
@@ -23,4 +20,7 @@ interface NewsArticleDao {
         onConflict = OnConflictStrategy.REPLACE
     )
     fun insertAllNewsArticles(newsArticles: List<NewsArticle>)
+
+    @Query("DELETE FROM newsarticle")
+    fun deleteAllArticles()
 }

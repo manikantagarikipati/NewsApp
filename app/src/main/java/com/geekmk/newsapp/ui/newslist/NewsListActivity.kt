@@ -18,16 +18,16 @@ import com.geekmk.newsapp.ui.newsdetail.NewsDetailActivity
 import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.activity_news_list.*
 import kotlinx.android.synthetic.main.content_news_list.*
+import kotlinx.android.synthetic.main.partial_error_no_internet.view.*
 import javax.inject.Inject
 
 class NewsListActivity : BaseActivity(), ViewClickCallBack {
 
 
-
     @Inject
     lateinit var newsArticlesViewModelFactory: NewsArticlesViewModelFactory
     private lateinit var newsArticlesViewModel: NewsArticlesViewModel
-    private var newsListAdapter = NewsListAdapter(mutableListOf(),this)
+    private var newsListAdapter = NewsListAdapter(mutableListOf(), this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,8 +54,12 @@ class NewsListActivity : BaseActivity(), ViewClickCallBack {
         )
 
         newsArticlesViewModel.newsArticlesError().observe(this, Observer<Int> {
-            it?.let {
-                showView(DynamicViewHandler.INTERNET)
+            it?.let { errorCode ->
+                val viewId = when (errorCode) {
+                    NetworkErrorCode.ERROR_UNKNOWN, NetworkErrorCode.ERROR_TIME_OUT -> DynamicViewHandler.SERVER
+                    else -> DynamicViewHandler.INTERNET
+                }
+                showView(viewId)
             }
         })
 
@@ -68,7 +72,7 @@ class NewsListActivity : BaseActivity(), ViewClickCallBack {
     private fun initializeRecycler() {
         rvNewsList.apply {
             setHasFixedSize(true)
-            layoutManager = LinearLayoutManager(this.context,RecyclerView.VERTICAL,false)
+            layoutManager = LinearLayoutManager(this.context, RecyclerView.VERTICAL, false)
         }
     }
 
@@ -78,10 +82,22 @@ class NewsListActivity : BaseActivity(), ViewClickCallBack {
     }
 
     override fun onViewClicked(id: Int, data: Any) {
-        when(id){
+        when (id) {
             R.id.nav_news_detail -> {
-                startActivity(NewsDetailActivity.getIntent(data as String,this))
+                startActivity(NewsDetailActivity.getIntent(data as String, this))
             }
         }
+    }
+
+
+    override fun onDynamicViewCreated(errorView: View, errorCode: Int) {
+        errorView.also {
+            it.noInternetTryAgain?.setOnClickListener {
+                showProgressView()
+                newsArticlesViewModel.loadTopNewsArticles()
+            }
+
+        }
+
     }
 }

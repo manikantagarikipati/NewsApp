@@ -6,6 +6,7 @@ import android.arch.lifecycle.ViewModel
 import com.geekmk.newsapp.base.NetworkErrorCode
 import com.geekmk.newsapp.data.NewsArticleRepository
 import com.geekmk.newsapp.data.model.NewsArticle
+import com.geekmk.newsapp.utils.Utils
 import com.geekmk.newsapp.utils.getLocalDate
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.observers.DisposableObserver
@@ -15,7 +16,8 @@ import javax.inject.Inject
 
 
 class NewsArticlesViewModel @Inject constructor(
-    private val newsArticleRepository: NewsArticleRepository) : ViewModel() {
+    private val newsArticleRepository: NewsArticleRepository,private val utils: Utils
+) : ViewModel() {
 
     var newsArticlesResult: MutableLiveData<List<NewsArticle>> = MutableLiveData()
     var newsArticlesError: MutableLiveData<Int> = MutableLiveData()
@@ -43,16 +45,20 @@ class NewsArticlesViewModel @Inject constructor(
             }
 
             override fun onNext(newsArticles: List<NewsArticle>) {
-                for(article in newsArticles){
-                    article.publishedAt = getLocalDate(article.publishedAt)
+                if(newsArticles.isEmpty() && !utils.isConnectedToInternet()){
+                    newsArticlesError.postValue(NetworkErrorCode.ERROR_NO_INTERNET)
+                }else{
+                    for(article in newsArticles){
+                        article.publishedAt = getLocalDate(article.publishedAt)
+                    }
+                    newsArticlesResult.postValue(newsArticles)
+                    newsArticlesLoader.postValue(false)
                 }
-                newsArticlesResult.postValue(newsArticles)
-                newsArticlesLoader.postValue(false)
             }
 
             override fun onError(e: Throwable) {
                 newsArticlesLoader.postValue(false)
-                newsArticlesError.postValue(NetworkErrorCode.ERROR_NO_INTERNET)
+                newsArticlesError.postValue(NetworkErrorCode.ERROR_UNKNOWN)
             }
         }
 

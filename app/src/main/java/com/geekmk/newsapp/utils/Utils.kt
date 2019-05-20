@@ -23,7 +23,7 @@ class Utils @Inject constructor(private val context: Context) {
     }
 }
 
-fun getLocalDate(serverDate: String): String {
+fun getLocalDate(serverDate: String?): String {
     return try {
 
         val formatter = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'")
