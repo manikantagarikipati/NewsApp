@@ -7,7 +7,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 
-interface ApiInterface {
+interface NewsService {
 
     @GET("top-headlines")
     fun getTopArticles(@Query("country") country: String,

@@ -1,6 +1,6 @@
 package com.geekmk.newsapp.di.modules
 
-import com.geekmk.newsapp.data.source.remote.ApiInterface
+import com.geekmk.newsapp.data.source.remote.NewsService
 import com.squareup.moshi.KotlinJsonAdapterFactory
 import com.squareup.moshi.Moshi
 import dagger.Module
@@ -44,7 +44,7 @@ class NetworkModule(private val baseUrl: String) {
 
     @Provides
     @Singleton
-    fun providesApiInterface(retrofit: Retrofit): ApiInterface = retrofit.create(
-        ApiInterface::class.java
+    fun providesApiInterface(retrofit: Retrofit): NewsService = retrofit.create(
+        NewsService::class.java
     )
 }

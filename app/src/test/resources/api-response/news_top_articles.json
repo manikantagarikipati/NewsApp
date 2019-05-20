@@ -1,0 +1,266 @@
+{
+  "status": "ok",
+  "totalResults": 38,
+  "articles": [
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": null,
+      "title": "11 people killed in gun attack at bar in Brazil: reports - Fox News",
+      "description": "Brazilian authorities say there has been a \"massacre\" in the country's northern Pará state without releasing any details, while Brazilian news media say gunmen attacked a bar in Belem City and killed 11 people.",
+      "url": "https://www.foxnews.com/world/brazil-gunmen-attack-bar-para-state-massacre",
+      "urlToImage": "https://static.foxnews.com/static/orion/styles/img/fox-news/og/og-fox-news.png",
+      "publishedAt": "2019-05-20T04:10:11Z",
+      "content": "RIO DE JANEIRO A gang of gunmen roared up to a bar in Belem city in Brazil’s northern Pará state and opened fire, killing six women and five men, media reports said.\r\nState officials would confirm only that “a massacre” occurred but gave no details.\r\nPolice r… [+944 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Jon Fingas",
+      "title": "Google quietly shelves custom Pixel phone cases - Engadget",
+      "description": "Google has dropped its personalized cases for Pixel phones.",
+      "url": "https://www.engadget.com/2019/05/19/google-drops-pixel-my-case/",
+      "urlToImage": "https://o.aolcdn.com/images/dims?thumbnail=1200%2C630&quality=80&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1600%252C1067%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C1067%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-05%252F72726850-7a7a-11e9-9fbf-c21d0bb6ee24%26client%3Da1acac3e1b3290917d92%26signature%3D0f5c55fda421dae1f7da02882a17e889a1da1684&client=amp-blogside-v2&signature=97457d492d5c9b68c0f5d7c42db9ad702f4cfdd8",
+      "publishedAt": "2019-05-20T03:51:25Z",
+      "content": "The company introduced Live Cases back in early 2016 for the Nexus 5X, 6 and 6P, using a clever NFC feature to provide wallpaper that matched the shell on your phone. Google dropped NFC when the Pixel 2 rolled around, and switched to its photo-based My Cases … [+418 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": "New York Post",
+      "title": "Brooks Koepka shuts down girlfriend’s kiss attempts during PGA Championship - Fox News",
+      "description": "",
+      "url": "https://www.foxnews.com/sports/brooks-koepka-shuts-down-girlfriends-kiss-attempts-during-pga-championship",
+      "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2019/05/AP19140007703333.jpg",
+      "publishedAt": "2019-05-20T03:39:54Z",
+      "content": "For Brooks Koepka, there’s a time and a place, and it’s not before the final round of the PGA Championship.\r\nOn Sunday, cameras caught Koepka shutting down two kiss attempts from girlfriend Jena Sims at Bethpage Black in Farmingdale. The golfer entered Sunday… [+479 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": "Edmund DeMarche",
+      "title": "US destroyer sails in disputed South China Sea to ‘challenge excessive’ claims by China - Fox News",
+      "description": "For the second time this month, the U.S. destroyer Preble sailed near islands claimed by China in the disputed South China Sea while the two countries engage in a trade fight.",
+      "url": "https://www.foxnews.com/world/us-destroyer-sails-in-disputed-south-china-sea-to-challenge-excessive-claims-by-china",
+      "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2019/05/0a4a2f44-navy.png",
+      "publishedAt": "2019-05-20T03:33:20Z",
+      "content": "For the second time this month, the U.S. destroyer Preble sailed near islands claimed by China in the disputed South China Sea while the two countries engage in a trade fight.\r\nThe operation was carried out on Sunday, Reuters reported, citing a commander for … [+1131 chars]"
+    },
+    {
+      "source": {
+        "id": "the-hill",
+        "name": "The Hill"
+      },
+      "author": "Zack Budryk",
+      "title": "Meeting of California officials descends into physical brawl | TheHill - The Hill",
+      "description": "A meeting of local government officials from across California dissolved into violence Saturday involving at least seven people,",
+      "url": "https://thehill.com/homenews/state-watch/444501-meeting-of-california-officials-descends-into-physical-brawl",
+      "urlToImage": "https://thehill.com/sites/default/files/policelinetape11032017getty_1.jpg",
+      "publishedAt": "2019-05-20T03:18:35Z",
+      "content": "A meeting of local government officials from across California dissolved into violence Saturday involving at least seven people, according to the Los Angeles Times.\r\nWhile law enforcement could not immediately determine who started the fight, Commerce, Calif.… [+1888 chars]"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Vlad Savov",
+      "title": "Intel and Qualcomm reportedly join Google in Huawei ban - The Verge",
+      "description": "Huawei’s bad weekend is turning worse as the company’s American suppliers are all falling in line with a US government edict banning them from doing business with the company. Bloomberg now reports that Intel, Qualcomm, and Broadcom, three of the world’s lead…",
+      "url": "https://www.theverge.com/2019/5/19/18632075/intel-qualcomm-huawei-ban-us-chipmakers-report",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/o1gGgfTgiSRYay9kx4_gaqOkd6c=/0x249:2040x1317/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/14130435/dseifert_190211_3224_2974.jpg",
+      "publishedAt": "2019-05-20T03:15:50Z",
+      "content": "Huaweis bad weekend is turning worse as the companys American suppliers are all falling in line with a US government edict banning them from doing business with the company. Bloomberg now reports that Intel, Qualcomm, and Broadcom, three of the worlds leading… [+1899 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Tasteofcountry.com"
+      },
+      "author": "sterlingwit",
+      "title": "Laine Hardy Wins 'American Idol' - Taste of Country",
+      "description": "The Louisiana favorite managed to pull ahead of Alejandro Aranda to take the season title.",
+      "url": "https://tasteofcountry.com/american-idol-2019-winner/",
+      "urlToImage": "https://townsquare.media/site/204/files/2019/04/laine-hardy-american-idol-top-20-sam-cooke.png?w=1200&h=0&zc=1&s=0&a=t&q=89",
+      "publishedAt": "2019-05-20T03:00:46Z",
+      "content": "Laine Hardy was declared the 2019 winner of American Idol on Sunday night (May 19), capping off a season of intense competition.\r\n\"I'm so thankful,\" gasped the popular Louisiana native, when awarded with the title over Alejandro Aranda.\r\nHardy, an 18-year-old… [+1975 chars]"
+    },
+    {
+      "source": {
+        "id": "usa-today",
+        "name": "USA Today"
+      },
+      "author": "Kelly Lawler",
+      "title": "'Game of Thrones' series finale recap: A disaster ending that fans didn't deserve - USA TODAY",
+      "description": "Spoiler alert! \"Game of Thrones\" aired its final episode Sunday night on HBO and the series didn't end the way any fans might have expected.",
+      "url": "https://www.usatoday.com/story/life/tv/2019/05/19/game-of-thrones-recap-series-finale-season-8-episode-6-the-iron-throne-jon-dany-arya-sansa-bran/3704539002/",
+      "urlToImage": "https://www.gannett-cdn.com/presto/2019/05/20/USAT/62cfa0b6-f078-415a-81a1-5956aa74502d-7_Helen_Sloan_-_HBO.jpg?crop=1399,798,x0,y251&width=3200&height=1680&fit=bounds",
+      "publishedAt": "2019-05-20T02:56:00Z",
+      "content": "\"Game of Thrones\" fans have endured jaw-dropping twists and turns season after season. Apparently, so have the show's stars.\r\n USA TODAY\r\nSpoiler alert! The following contains details from the Game of Thrones series finale, Season 8 Episode 6, \"The Iron Thron… [+2688 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Wgntv.com"
+      },
+      "author": "https://www.facebook.com/wgnnews",
+      "title": "Rizzo homers, Cubs hold off Nationals’ rally for 6-5 win - WGN TV Chicago",
+      "description": "WASHINGTON — Anthony Rizzo homered, Albert Almora Jr. had three hits and the Chicago Cubs held off the Washington Nationals for a 6-5 victory Sunday night.\r\n\nChicago led 6-1 before Washington closed to within a run on a three-run homer by Anthony Rendon in th…",
+      "url": "https://wgntv.com/2019/05/19/rizzo-homers-cubs-hold-off-nationals-rally-for-6-5-win/",
+      "urlToImage": "https://tribwgntv.files.wordpress.com/2019/05/gettyimages-1145124786-e1558320521191.jpg?quality=85&strip=all",
+      "publishedAt": "2019-05-20T02:48:00Z",
+      "content": "WASHINGTON Anthony Rizzo homered, Albert Almora Jr. had three hits and the Chicago Cubs held off the Washington Nationals for a 6-5 victory Sunday night.\r\nChicago led 6-1 before Washington closed to within a run on a three-run homer by Anthony Rendon in the s… [+1163 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "Trump threatens Iran's 'end' if it seeks fight with the US - Aljazeera.com",
+      "description": "US president's direct threat comes after Tehran says it opposes war and no country has 'illusion' it can confront it.",
+      "url": "https://www.aljazeera.com/news/2019/05/trump-threatens-iran-seeks-fight-190520003050499.html",
+      "urlToImage": "https://www.aljazeera.com/mritems/Images/2019/5/20/e1eeaf8157c442b3b31e00da2700cd28_18.jpg",
+      "publishedAt": "2019-05-20T02:31:00Z",
+      "content": "Just days after saying he was prepared for talks, United States President Donald Trump has issued a direct threat to Iran, suggesting that the Islamic Republic will be destroyed if it attacks his country's interests.\r\n\"If Iran wants to fight, that will be the… [+6129 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nbcsports.com"
+      },
+      "author": null,
+      "title": "Draymond's mom agrees Warriors need KD for NBA Finals - NBCSports.com",
+      "description": "The Warriors keep winning without Kevin Durant, but Draymond Green's mom knows they need him in the NBA Finals.",
+      "url": "https://www.nbcsports.com/bayarea/warriors/draymond-greens-mom-agrees-warriors-need-kevin-durant-nba-finals",
+      "urlToImage": "https://www.nbcsports.com/bayarea/sites/csnbayarea/files/2019/05/19/kddrayhappyus.jpg",
+      "publishedAt": "2019-05-20T01:50:43Z",
+      "content": "Draymond Green went viral for all the right reasons on Saturday night.\r\nThe Warriors' do-it-all forward was all over the place in Golden State's 110-99 Game 3 win over the Trail Blazers. He scored 20 points, grabbed 13 rebounds, dished 12 assists, and swiped … [+1972 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Eonline.com"
+      },
+      "author": "Lena Grossman",
+      "title": "Relive Scarlett Johansson and Colin Jost's Cutest Couple Moments - E! NEWS",
+      "description": "They've been together for about two years",
+      "url": "https://www.eonline.com/news/1042728/scarlett-johansson-and-colin-jost-are-engaged-relive-their-cutest-couple-moments",
+      "urlToImage": "https://akns-images.eonline.com/eol_images/Entire_Site/2018817/rs_600x600-180917151046-600-colin-jost-scarlett-johansson-emmy-couples.jpg?fit=around|600:467&crop=600:467;center,top&output-quality=90",
+      "publishedAt": "2019-05-20T01:39:00Z",
+      "content": "Alberto E. Rodriguez/Getty Images for Disney\r\nThe Endgame? It's just the beginning\r\nThe lovebirds share a laugh at the Avengers: Endgame premiere on April 22. On May 19, E! News confirmed that they were engaged after two years together. \r\nAndrew H. Walker/WWD… [+1176 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deadline.com"
+      },
+      "author": "Anita Bennett, Anita Bennett",
+      "title": "Billionaire ‘Intruder’ Producer Robert F. Smith Vows To Pay Off Morehouse Grads’ Student Debt - Deadline",
+      "description": "Philanthropist Robert F. Smith delivered a life-changing commencement speech Sunday at Morehouse College in Atlanta. The billionaire businessman, who received an honorary degree from the historical…",
+      "url": "https://deadline.com/2019/05/billionaire-producer-robert-f-smith-vows-to-pay-off-morehouse-grads-debt-1202618558/",
+      "urlToImage": "https://pmcdeadline2.files.wordpress.com/2019/05/robert-f-smith-morehouse-graduation.jpg?w=630",
+      "publishedAt": "2019-05-20T01:20:00Z",
+      "content": "Philanthropist Robert F. Smith delivered a life-changing commencement speech Sunday at Morehouse College in Atlanta.\r\nThe billionaire businessman, who received an honorary degree from the historically black school, surprised the nearly 400 graduating seniors … [+1591 chars]"
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Andrew Galbraith",
+      "title": "Asian shares steady after steep losses; Saudi comments lift oil - Reuters",
+      "description": "Asian shares steadied on Monday as investors caught their breath following another week of escalating U.S.-China trade tensions, with sentiment turning brighter after the United States said it would lift tariffs in North America.",
+      "url": "https://www.reuters.com/article/us-global-markets-idUSKCN1SQ02O",
+      "urlToImage": "https://s2.reutersmedia.net/resources/r/?m=02&d=20190520&t=2&i=1388918108&w=1200&r=LYNXNPEF4J023",
+      "publishedAt": "2019-05-20T01:18:00Z",
+      "content": "SHANGHAI (Reuters) - Asian shares steadied on Monday as investors caught their breath following another week of escalating U.S.-China trade tensions, with sentiment turning brighter after the United States said it would lift tariffs in North America. \r\nMSCI’s… [+5051 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Cnet.com"
+      },
+      "author": "Caitlin Petrakovitz",
+      "title": "Westworld gets a season 3 trailer before Game of Thrones finale - CNET",
+      "description": "Airing before Game of Thrones finale, our first look at the next season has arrived. Westworld will return 2020.",
+      "url": "https://www.cnet.com/news/watch-westworld-season-3-trailer-before-game-of-thrones-finale/",
+      "urlToImage": "https://cnet3.cbsistatic.com/img/C5Q1pztrppJK17_vYO8dgdjHnJo=/2019/05/20/daa81455-9dfb-4918-9252-5466fe78b3fa/westworld-s3-2.png",
+      "publishedAt": "2019-05-20T01:04:00Z",
+      "content": "HBO's Westworld will return with Aaron Paul, Tessa Thompson and Lena Waithe, and tbh who hasn't wished for that threesome?!?\r\n(I choose to believe I manifested this and helped make it happen, because based on rumors no one was expecting a trailer this early.)… [+1301 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Digitaltrends.com"
+      },
+      "author": "Jackie Dove",
+      "title": "Samsung adds One UI and battery boosts to Galaxy Watch and Gear smartwatches - Digital Trends",
+      "description": "Samsung has updated software for its Galaxy Watch, Gear Sport, and Gear S3 watch lineup to implement its updated and simplified Samsung One UI interface. The update also makes available new watch faces, battery life improvements, and health and fitness featur…",
+      "url": "https://www.digitaltrends.com/wearables/samsung-one-ui-battery-updates-galaxy-watch-gear-sport-gear-s3/",
+      "urlToImage": "https://icdn3.digitaltrends.com/image/galaxy-watch-active-review-10-1200x630-c-ar1.91.jpg",
+      "publishedAt": "2019-05-20T01:00:35Z",
+      "content": "Julian Chokkattu/Digital Trends\r\nSamsung has announced a software update for the Galaxy Watch, Gear Sport, and Gear S3 smartwatch lineup that will not only bring the new One UI interface first seen on the Galaxy Watch Active, but it will also deliver battery … [+2323 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Cbslocal.com"
+      },
+      "author": null,
+      "title": "Historic Martin Tower’s 21-Story Bethlehem Steel Headquarters Is Imploded - CBS Philly",
+      "description": "Watch the historic Martin Tower come crumbling down right here.",
+      "url": "https://philadelphia.cbslocal.com/2019/05/19/bethlehem-steel-martin-tower-imploded/",
+      "urlToImage": "https://cbsphilly.files.wordpress.com/2019/05/martin-tower-implosion.jpg?w=1440",
+      "publishedAt": "2019-05-20T01:00:00Z",
+      "content": "BETHLEHEM, Pa. (CBS) Martin Tower is gone. Dynamite brought down the former world headquarters of Bethlehem Steel at 7:03 a.m. Sunday. The implosion rocked parts of the Lehigh Valley, those who say it was louder than they thought it would be and that you felt… [+1419 chars]"
+    },
+    {
+      "source": {
+        "id": "nbc-news",
+        "name": "NBC News"
+      },
+      "author": "Adam Edelman",
+      "title": "Buttigieg attacks Fox News hosts at Fox News town hall - NBC News",
+      "description": "Buttigieg, who came under criticism for participating in the Fox News event, criticized network personalities like Tucker Carlson and Laura Ingraham.",
+      "url": "https://www.nbcnews.com/politics/2020-election/buttigieg-attacks-fox-news-hosts-fox-news-town-hall-n1007546",
+      "urlToImage": "https://media4.s-nbcnews.com/j/newscms/2019_17/2823466/190416-pete-buttigieg-mn-0820_1920df5b059f1d0afc18677e50f0aa63.nbcnews-fp-1200-630.jpg",
+      "publishedAt": "2019-05-20T00:45:00Z",
+      "content": "Get breaking news alerts and special reports. The news and stories that matter, delivered weekday mornings.\r\nSUBSCRIBE\r\nMay 20, 2019, 12:45 AM UTC\r\n / Updated May 20, 2019, 1:30 AM UTC\r\nPete Buttigieg used a nationally televised Fox News town hall on Sunday n… [+4447 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Al.com"
+      },
+      "author": "Mike Cason | mcason@al.com",
+      "title": "Hundreds turn out to protest abortion law at Alabama Capitol - AL.com",
+      "description": "Protesters marched up Dexter Avenue to the Alabama Capitol, carrying signs and chanting \"vote them out\" to express their opposition to Alabama's new law making abortion a felony.",
+      "url": "https://www.al.com/news/2019/05/hundreds-turn-out-to-protest-abortion-law-at-alabama-capitol.html",
+      "urlToImage": "https://www.al.com/resizer/shdWspTnCQuGI444_xvyZltufXY=/1200x0/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/RECD7CKFYRGYJKVE57PUGHAENY.JPG",
+      "publishedAt": "2019-05-20T00:17:00Z",
+      "content": "Hundreds of people chanted, carried signs and cheered speakers at a march today at the state Capitol opposing Alabamas new law to ban abortion.\r\nMegan Skipper of Montgomery, one of the organizers, said she was overwhelmed by the turnout for the event, initial… [+4629 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Fool.com"
+      },
+      "author": "Selena Maranjian",
+      "title": "3 Great Reasons to Take Social Security Benefits at 62 - The Motley Fool",
+      "description": "You'll receive bigger monthly checks if you wait longer to start collecting them, but that shouldn't be the sole factor in your retirement-timing decision.",
+      "url": "https://www.fool.com/retirement/2019/05/19/3-great-reasons-to-take-social-security-benefits-a.aspx",
+      "urlToImage": "https://g.foolcdn.com/editorial/images/525981/getty-62-birthday-social-security-retirement-retire-early.jpg",
+      "publishedAt": "2019-05-19T23:02:00Z",
+      "content": "If you're an American worker who qualifies for Social Security, your birth year will determine what the program considers your \"full retirement age\" (FRA) -- the point at which you can apply for retirement benefits and start collecting monthly checks at the f… [+4326 chars]"
+    }
+  ]
+}

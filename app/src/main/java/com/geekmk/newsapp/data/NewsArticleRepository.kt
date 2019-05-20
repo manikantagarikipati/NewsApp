@@ -3,14 +3,14 @@ package com.geekmk.newsapp.data
 import android.util.Log
 import com.geekmk.newsapp.data.model.NewsArticle
 import com.geekmk.newsapp.data.source.local.NewsArticleDao
-import com.geekmk.newsapp.data.source.remote.ApiInterface
+import com.geekmk.newsapp.data.source.remote.NewsService
 import com.geekmk.newsapp.utils.Utils
 
 import io.reactivex.Observable
 import javax.inject.Inject
 
 class NewsArticleRepository @Inject constructor(
-    private val apiInterface: ApiInterface,
+    private val newsService: NewsService,
     private val newsArticleDao: NewsArticleDao, private val utils: Utils
 ) {
 
@@ -28,7 +28,7 @@ class NewsArticleRepository @Inject constructor(
     }
 
     private fun getArticlesFromApi(): Observable<List<NewsArticle>> {
-        return apiInterface.getTopArticles("us")
+        return newsService.getTopArticles("us")
             .doOnNext {
                 Log.e("REPOSITORY API * ", it.articles.size.toString())
                 newsArticleDao.deleteAllArticles()
