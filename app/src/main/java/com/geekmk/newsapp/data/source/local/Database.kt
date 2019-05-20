@@ -1,7 +1,7 @@
 package com.geekmk.newsapp.data.source.local
 
-import android.arch.persistence.room.Database
-import android.arch.persistence.room.RoomDatabase
+import androidx.room.Database
+import androidx.room.RoomDatabase
 import com.geekmk.newsapp.data.model.NewsArticle
 
 

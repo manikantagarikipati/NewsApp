@@ -1,7 +1,7 @@
 package com.geekmk.newsapp.base
 
-import android.support.annotation.LayoutRes
-import android.support.v7.widget.AppCompatImageView
+import androidx.annotation.LayoutRes
+import androidx.appcompat.widget.AppCompatImageView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

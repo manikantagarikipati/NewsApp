@@ -1,8 +1,8 @@
 package com.geekmk.newsapp.di.modules
 
 import android.app.Application
-import android.arch.lifecycle.ViewModelProvider
-import android.arch.persistence.room.Room
+import androidx.lifecycle.ViewModelProvider
+import androidx.room.Room
 import com.geekmk.newsapp.App
 import com.geekmk.newsapp.data.source.local.Database
 import com.geekmk.newsapp.data.source.local.NewsArticleDao

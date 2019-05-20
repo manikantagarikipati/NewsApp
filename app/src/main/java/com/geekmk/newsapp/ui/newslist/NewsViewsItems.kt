@@ -1,6 +1,6 @@
 package com.geekmk.newsapp.ui.newslist
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.widget.TextView
 import com.geekmk.newsapp.R
@@ -9,7 +9,7 @@ import com.geekmk.newsapp.base.loadURL
 import com.geekmk.newsapp.data.model.NewsArticle
 import kotlinx.android.synthetic.main.item_news_article.view.*
 
-class NewsItemViewHolder(item: View,val viewClickCallBack: ViewClickCallBack?): RecyclerView.ViewHolder(item){
+class NewsItemViewHolder(item: View,val viewClickCallBack: ViewClickCallBack?): androidx.recyclerview.widget.RecyclerView.ViewHolder(item){
 
     fun bind(newsArticle: NewsArticle){
         setTextIfAvailable(itemView.tvArticleDescription,newsArticle.description)

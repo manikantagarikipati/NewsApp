@@ -1,12 +1,12 @@
 package com.geekmk.newsapp.base
 
 import android.app.Activity
-import android.support.annotation.ColorRes
-import android.support.annotation.IntDef
-import android.support.annotation.LayoutRes
-import android.support.annotation.NonNull
-import android.support.v4.widget.NestedScrollView
-import android.support.v7.widget.RecyclerView
+import androidx.annotation.ColorRes
+import androidx.annotation.IntDef
+import androidx.annotation.LayoutRes
+import androidx.annotation.NonNull
+import androidx.core.widget.NestedScrollView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,7 +30,7 @@ class DynamicViewHandler(view: View) {
             v
         }*/
 
-        root = if (v is ScrollView || v is RecyclerView
+        root = if (v is ScrollView || v is androidx.recyclerview.widget.RecyclerView
                 || v is AbsListView || v is NestedScrollView
         ) {
             if (v.parent == null) {

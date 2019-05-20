@@ -1,6 +1,6 @@
 package com.geekmk.newsapp.data.source.local
 
-import android.arch.persistence.room.*
+import androidx.room.*
 import com.geekmk.newsapp.data.model.NewsArticle
 import io.reactivex.Single
 

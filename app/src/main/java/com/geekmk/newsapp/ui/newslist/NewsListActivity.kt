@@ -1,11 +1,11 @@
 package com.geekmk.newsapp.ui.newslist
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.widget.Toast
 import com.geekmk.newsapp.R
@@ -72,7 +72,11 @@ class NewsListActivity : BaseActivity(), ViewClickCallBack {
     private fun initializeRecycler() {
         rvNewsList.apply {
             setHasFixedSize(true)
-            layoutManager = LinearLayoutManager(this.context, RecyclerView.VERTICAL, false)
+            layoutManager = androidx.recyclerview.widget.LinearLayoutManager(
+                this.context,
+                androidx.recyclerview.widget.RecyclerView.VERTICAL,
+                false
+            )
         }
     }
 
