@@ -3,14 +3,15 @@ package com.geekmk.newsapp.ui.newslist
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
 import com.geekmk.newsapp.R
+import com.geekmk.newsapp.base.ViewClickCallBack
 import com.geekmk.newsapp.base.inflate
 import com.geekmk.newsapp.data.model.NewsArticle
 
-class NewsListAdapter(var newsArticleRVS:MutableList<NewsArticle>): RecyclerView.Adapter<NewsItemViewHolder>() {
+class NewsListAdapter(var newsArticleRVS:MutableList<NewsArticle>, private val viewClickCallBack: ViewClickCallBack?): RecyclerView.Adapter<NewsItemViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsItemViewHolder {
-        return NewsItemViewHolder(parent.inflate(R.layout.item_news_article))
+        return NewsItemViewHolder(parent.inflate(R.layout.item_news_article),viewClickCallBack)
     }
 
     override fun getItemCount(): Int  = newsArticleRVS.size

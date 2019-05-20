@@ -12,19 +12,22 @@ import com.geekmk.newsapp.R
 import com.geekmk.newsapp.base.BaseActivity
 import com.geekmk.newsapp.base.DynamicViewHandler
 import com.geekmk.newsapp.base.NetworkErrorCode
+import com.geekmk.newsapp.base.ViewClickCallBack
 import com.geekmk.newsapp.data.model.NewsArticle
+import com.geekmk.newsapp.ui.newsdetail.NewsDetailActivity
 import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.activity_news_list.*
 import kotlinx.android.synthetic.main.content_news_list.*
 import javax.inject.Inject
 
-class NewsListActivity : BaseActivity() {
+class NewsListActivity : BaseActivity(), ViewClickCallBack {
+
 
 
     @Inject
     lateinit var newsArticlesViewModelFactory: NewsArticlesViewModelFactory
     private lateinit var newsArticlesViewModel: NewsArticlesViewModel
-    private var newsListAdapter = NewsListAdapter(mutableListOf())
+    private var newsListAdapter = NewsListAdapter(mutableListOf(),this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,5 +75,13 @@ class NewsListActivity : BaseActivity() {
     override fun onDestroy() {
         newsArticlesViewModel.disposeElements()
         super.onDestroy()
+    }
+
+    override fun onViewClicked(id: Int, data: Any) {
+        when(id){
+            R.id.nav_news_detail -> {
+                startActivity(NewsDetailActivity.getIntent(data as String,this))
+            }
+        }
     }
 }

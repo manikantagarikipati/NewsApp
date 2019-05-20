@@ -6,6 +6,7 @@ import android.arch.lifecycle.ViewModel
 import com.geekmk.newsapp.base.NetworkErrorCode
 import com.geekmk.newsapp.data.NewsArticleRepository
 import com.geekmk.newsapp.data.model.NewsArticle
+import com.geekmk.newsapp.utils.getLocalDate
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.observers.DisposableObserver
 import io.reactivex.schedulers.Schedulers
@@ -42,6 +43,9 @@ class NewsArticlesViewModel @Inject constructor(
             }
 
             override fun onNext(newsArticles: List<NewsArticle>) {
+                for(article in newsArticles){
+                    article.publishedAt = getLocalDate(article.publishedAt)
+                }
                 newsArticlesResult.postValue(newsArticles)
                 newsArticlesLoader.postValue(false)
             }

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.RecyclerView
+<WebView
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-  android:layout_marginStart="@dimen/fab_margin"
-  android:layout_marginEnd="@dimen/fab_margin"
-  android:paddingTop="@dimen/fab_margin"
-  android:id="@+id/rvNewsList"
+  android:id="@+id/wvNewsDetail"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   app:layout_behavior="@string/appbar_scrolling_view_behavior"
-  tools:context=".ui.newslist.NewsListActivity"
-  tools:showIn="@layout/activity_news_list"/>
+  tools:context=".ui.newsdetail.NewsDetailActivity"
+  tools:showIn="@layout/activity_news_detail">
+
+</WebView>
