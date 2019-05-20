@@ -41,6 +41,7 @@ ext {
     rxJava2Version = "2.1.0"
     httpLoggingInterceporVersion = "3.9.0"
     picassoVersion = "2.71828"
+    okhttpVersion = '3.11.0'
 
 
     //test

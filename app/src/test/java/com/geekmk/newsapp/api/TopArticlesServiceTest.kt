@@ -9,7 +9,7 @@ import org.junit.Test
 import java.io.IOException
 
 
-class MovieServiceTest : ApiAbstract<NewsService>() {
+class NewsArticleServiceTest : ApiAbstract<NewsService>() {
     private lateinit var service: NewsService
     var mSubscriber: TestSubscriber<List<NewsArticle>>? = null
 
