@@ -8,7 +8,7 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.android.tools.build:gradle:3.4.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -32,8 +32,9 @@ ext {
     moshiKotlinVersion = "1.5.0"
     materialDesignVersion = "1.0.0"
     dagger2Version = "2.22.1"
-    archRoomVersion = "2.0.0"
+    archRoomVersion = "2.1.0"
     archLifecycleVersion = "2.0.0"
+    archCoreTesting = "2.0.0"
     retrofitVersion = "2.3.0"
     moshiConverterVersion = "2.3.0"
     rxJavaAdapterVersion = "2.3.0"

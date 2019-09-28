@@ -47,14 +47,14 @@ dependencies {
     implementation "androidx.room:room-runtime:${rootProject.ext.archRoomVersion}"
     implementation "androidx.room:room-rxjava2:${rootProject.ext.archRoomVersion}"
     kapt "androidx.room:room-compiler:${rootProject.ext.archRoomVersion}"
-    testImplementation "androidx.arch.core:core-testing:$archRoomVersion"
+    testImplementation "androidx.arch.core:core-testing:$archCoreTesting"
 
     //Lifecycle
-    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.archRoomVersion}"
-    kapt "androidx.lifecycle:lifecycle-compiler:${rootProject.ext.archRoomVersion}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.archLifecycleVersion}"
+    kapt "androidx.lifecycle:lifecycle-compiler:${rootProject.ext.archLifecycleVersion}"
 
     //RxJava 2 LiveData
-    implementation "androidx.lifecycle:lifecycle-reactivestreams:${rootProject.ext.archRoomVersion}"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:${rootProject.ext.archLifecycleVersion}"
 
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofitVersion}"
